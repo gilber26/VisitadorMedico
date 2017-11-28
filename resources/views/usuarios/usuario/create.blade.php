@@ -29,7 +29,7 @@
     
     @foreach($tipousuarios as $tpu)
 
-<option value="{{$tpu->id_tipousuario}}"> {{$tpu->NomTipoUsuario}}</option>
+<option value="{{$tpu->id_tipousuario}}"> Seleccionar {{$tpu->NomTipoUsuario}}</option>
     @endforeach
 </select>
         </div>
@@ -40,7 +40,7 @@
         
     <div class="form-group">
         <label for="Nombres">Nombres</label>
-        <input type="text" name="Nombres" required value="{{old('Nombres')}}" class="form-control" placeholder="Nombres...">
+        <input type="text" name="Nombres" required value="{{old('Nombres')}}" class="form-control" placeholder="Ej: Diego Andres...">
     </div>
 
     </div>
@@ -48,20 +48,20 @@
     <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
          <div class="form-group">
         <label for="Apellidos">Apellidos</label>
-        <input type="text" name="Apellidos" required value="{{old('Apeliidos')}}" class="form-control" placeholder="Apellidos...">
+        <input type="text" name="Apellidos" required value="{{old('Apellidos')}}" class="form-control" placeholder="Ej: Gutierrez Diaz...">
     </div>
     </div>
 
     <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
         <div class="form-group">
         <label for="Identificacion">Identificacion</label>
-        <input type="number" name="Identificacion"  required value="{{old('Identificacion')}}" class="form-control" placeholder="Identificacion...">
+        <input type="number" name="Identificacion"  required value="{{old('Identificacion')}}" class="form-control" placeholder="123456...">
     </div>
     </div>
     <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
     <div class="form-group">
         <label for="Correo">Correo</label>
-        <input type="text" name="Correo" required value="{{old('Correo')}}" class="form-control" placeholder="Correo...">
+        <input type="email" name="Correo" required value="{{old('Correo')}}" class="form-control" placeholder="Diego@gmail.com...">
     </div>
     </div>
 
@@ -69,21 +69,21 @@
 
             <div class="form-group">
         <label for="Clave">Clave</label>
-        <input type="text" name="Clave" required value="{{old('Clave')}}" class="form-control" placeholder="Clave...">
+        <input type="text" name="Clave" required value="{{old('Clave')}}" class="form-control" placeholder="die*****...">
     </div>
         </div>
 
         <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
 <div class="form-group">
         <label for="Direccion">Direccion</label>
-        <input type="text" name="Direccion" required value="{{old('Direccion')}}" class="form-control" placeholder="Direccion...">
+        <input type="text" name="Direccion" required value="{{old('Direccion')}}" class="form-control" placeholder="Cra 25 H 30...">
     </div>
 
         </div>
          <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
 <div class="form-group">
         <label for="Estado">Estado</label>
-        <input type="text" name="Estado" required value="{{old('Estado')}}"  class="form-control" placeholder="Estado...">
+        <input type="number" name="Estado" required value="{{old('Estado')}}"  class="form-control" placeholder="Estado 0 o 1...">
     </div>
             
         </div>

@@ -65,7 +65,7 @@
     <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
     <div class="form-group">
         <label for="Correo">Correo</label>
-        <input type="text" name="Correo" required value="{{$usuario->Correo}}" class="form-control" >
+        <input type="email" name="Correo" required value="{{$usuario->Correo}}" class="form-control" >
     </div>
     </div>
 
@@ -87,7 +87,7 @@
          <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
 <div class="form-group">
         <label for="Estado">Estado</label>
-        <input type="text" name="Estado" required value="{{$usuario->Estado}}"  class="form-control">
+        <input type="number" name="Estado" required value="{{$usuario->Estado}}"  class="form-control">
     </div>
             
         </div>

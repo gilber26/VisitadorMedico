@@ -40,7 +40,7 @@
         
     <div class="form-group">
         <label for="NomProducto">NomProducto</label>
-        <input type="text" name="NomProducto" required value="{{old('NomProducto')}}" class="form-control" placeholder="Nombre...">
+        <input type="text" name="NomProducto" required value="{{old('NomProducto')}}" class="form-control" placeholder="Ej: Acetaminofen...">
     </div>
 
     </div>
@@ -48,7 +48,7 @@
     <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
          <div class="form-group">
         <label for="Descripcion">Descripcion</label>
-        <input type="text" name="Descripcion" required value="{{old('Descripcion')}}" class="form-control" placeholder="Descripcion...">
+        <input type="text" name="Descripcion" required value="{{old('Descripcion')}}" class="form-control" placeholder="Ej: Dosis minima...">
     </div>
     </div>
 

@@ -8,6 +8,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/bootstrap-select.min.css')}}">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{asset('css/font-awesome.css')}}">
     <!-- Theme style -->
@@ -91,20 +92,20 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="usuarios/usuario"><i class="fa fa-circle-o"></i> Administrar Usuarios</a></li>
-              <!--  <li><a href="almacen/categoria"><i class="fa fa-circle-o"></i> Categorías</a></li> -->
+                <li><a href="usuario"><i class="fa fa-circle-o"></i> Administrar Usuarios</a></li>
+              <li><a href="tipousuario"><i class="fa fa-circle-o"></i>Administrar Tipo Usuarios</a></li>
               </ul>
             </li>
             
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-circle-o"></i>
-                <span>Despacho</span>
+                <i class="fa fa-folder"></i>
+                <span>Productos</span>
                  <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="compras/ingreso"><i class="fa fa-circle-o"></i> Ingresos</a></li>
-                <li><a href="compras/proveedor"><i class="fa fa-circle-o"></i> Proveedores</a></li>
+                <li><a href="producto"><i class="fa fa-circle-o"></i> Administrar Productos</a></li>
+                <li><a href="tipoproducto"><i class="fa fa-circle-o"></i> Administrar Tipo Productos</a></li>
               </ul>
             </li>
             <li class="treeview">
@@ -199,8 +200,10 @@
       
     <!-- jQuery 2.1.4 -->
     <script src="{{asset('js/jQuery-2.1.4.min.js')}}"></script>
+    @stack('scripts')
     <!-- Bootstrap 3.3.5 -->
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('js/bootstrap-select.min.js')}}"></script>
     <!-- AdminLTE App -->
     <script src="{{asset('js/app.min.js')}}"></script>
     
