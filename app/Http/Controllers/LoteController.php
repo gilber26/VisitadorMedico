@@ -107,15 +107,16 @@ public function show($id)
   ->join('det_lote_producto as dl', 'l.Id_Lote','=','dl.Id_Lote')
   ->select('l.Id_Lote', 'la.NomLaboratorio','l.NumRemision','l.FechaRemision','l.Estado', DB::raw('sum(dl.Costo*Cantidad) as total')) 
   ->where('l.Id_Lote', '=', $id)
+  -> groupBy('l.Id_Lote', 'la.NomLaboratorio','l.NumRemision','l.FechaRemision','l.Estado')
   ->first();
 
   $detalle =DB::table('det_lote_producto as dl') 
    ->join('productos as p', 'dl.Id_Producto','=','p.Id_Producto')
-  ->select('p.Nomproducto as producto','dl.Cantidad','dl.Costo','dl.Precio', 'Fecha_Vencimiento','Stock_Lote') 
+  ->select('p.Nomproducto as producto','dl.Cantidad','dl.Costo','dl.Precio', 'dl.Fecha_Vencimiento','dl.Stock_Lote') 
   ->where('dl.Id_Lote', '=', $id)
   ->get();
 
-return view("usuarios.lote.show",["lote"=>$Lote, 'detalle'=>$detalle]);
+return view("usuarios.lote.show",["lote"=>$lote, 'detalle'=>$detalle]);
 
 
 }

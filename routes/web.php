@@ -20,3 +20,6 @@ Route::resource('usuarios/tipousuario', 'TipoUsuarioController');
 Route::resource('usuarios/tipoproducto', 'TipoProductoController');
 Route::resource('usuarios/producto', 'ProductoController');
 Route::resource('usuarios/lote', 'LoteController');
+Route::resource('usuarios/laboratorio', 'LaboratorioController');
+Route::resource('usuarios/despacho', 'DespachoController');
+

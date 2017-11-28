@@ -88,13 +88,24 @@
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-users"></i>
-                <span>Usuario</span>
+                <span>Usuarios</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
                 <li><a href="usuario"><i class="fa fa-circle-o"></i> Administrar Usuarios</a></li>
               <li><a href="tipousuario"><i class="fa fa-circle-o"></i>Administrar Tipo Usuarios</a></li>
               </ul>
+            </li>
+
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-minus"></i>
+                <span>Clientes</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="cliente"><i class="fa fa-circle-o"></i> Administrar Cleintes</a></li>
+             </ul>
             </li>
             
             <li class="treeview">
@@ -110,39 +121,38 @@
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-shopping-cart"></i>
-                <span>Ventas</span>
+                <i class="fa fa-circle-o"></i>
+                <span>Laboratorios</span>
                  <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="ventas/venta"><i class="fa fa-circle-o"></i> Ventas</a></li>
-                <li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Clientes</a></li>
+                <li><a href="laboratorio"><i class="fa fa-circle-o"></i>Gestion Laboratorios</a></li>
               </ul>
             </li>
-                       
+
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-folder"></i> <span>Acceso</span>
-                <i class="fa fa-angle-left pull-right"></i>
+                <i class="fa fa-angle-left"></i>
+                <span>Lotes</span>
+                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="configuracion/usuario"><i class="fa fa-circle-o"></i> Usuarios</a></li>
-                
+                <li><a href="lote"><i class="fa fa-circle-o"></i>Gestion Lotes</a></li>
               </ul>
-            </li>
-             <li>
+            </li>  
+                  
+             <li class="treeview">
               <a href="#">
-                <i class="fa fa-plus-square"></i> <span>Ayuda</span>
-                <small class="label pull-right bg-red">PDF</small>
+                <i class="fa fa-shopping-cart"></i>
+                <span>Pedidos</span>
+                 <i class="fa fa-angle-left pull-right"></i>
               </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-info-circle"></i> <span>Acerca De...</span>
-                <small class="label pull-right bg-yellow">IT</small>
-              </a>
-            </li>
-                        
+              <ul class="treeview-menu">
+                <li><a href="pedido"><i class="fa fa-circle-o"></i>Gestion Pedidos</a></li>
+              </ul>
+            </li>          
+         
+                                    
           </ul>
         </section>
         <!-- /.sidebar -->

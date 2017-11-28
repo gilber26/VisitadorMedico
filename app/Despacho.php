@@ -4,20 +4,22 @@ namespace Vmedic;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Pedido extends Model
+class Despacho extends Model
 {
-     protected $table='pedido';
-     protected $primaryKey='Id_Pedido';
+    
+   protected $table='despacho';
+     protected $primaryKey='Id_Despacho';
      public $timestamps=false;
 
 
      protected $fillable=[
 
-     'Id_Usuario',
-     'Id_Cliente',
-     'Fecha_Registro',
-     'Estado'
+     'Id_Pedido',
+     'Fecha_Despacho'
+    
      ];
 
      protected $guarded =[
      ];
+
+}
